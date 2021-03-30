@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event DOM</title>
+    <style>
+        body{
+            background: skyblue;
+        }
+
+        #area{
+            font: normal 20pt Arial;
+            background: rgb(177, 175, 175);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin: 200px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interact...
+    </div>
+    <script>
+        var area = document.getElementById('area')
+        area.addEventListener('click', clic)
+        area.addEventListener('mouseenter', entr)
+        area.addEventListener('mouseout', sair)
+        function entr(){
+            area.style.background = "blue"
+            area.innerText = "Came in"
+        }
+
+        function clic(){
+            area.style.background = "red"
+            area.innerText = "clicked"
+        }
+
+        function sair(){
+            area.innerText = 'leave'
+            area.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
