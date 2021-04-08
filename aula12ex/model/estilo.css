@@ -13,7 +13,7 @@ section{
     background: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 400px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.527);
     text-align: center;
@@ -24,3 +24,17 @@ footer{
     text-align: center;
     font-style: italic;
 }
+
+@media(max-width: 858px){
+    section{
+        width: 450px;
+    }
+}
+
+
+@media(min-width:952px){
+    section{
+        width: 600px;
+    }
+}
+
