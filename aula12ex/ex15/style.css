@@ -1,0 +1,44 @@
+body{
+    background: rgb(130, 130, 255);
+    font-family: Arial;
+    font-size: 18pt;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background: white;
+    padding: 15px;
+    margin: auto;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 5px 5px 10px black;
+}
+
+footer{
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+
+#result{
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media(max-width: 858px){
+    section{
+        width: 430px;
+    }
+}
+
+
+@media(min-width:952px){
+    section{
+        width: 600px;
+    }
+}
+
