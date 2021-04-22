@@ -1,17 +1,18 @@
-let now = new Date()
-let hour = now.getHours() 
-let tn = document.getElementById('time')
-tn.innerText = `Now is ${hour} hours `
-let resu = document.getElementById('Result')
-if (hour < 12){
-    resu.innerText = "Good morning"
-    document.body.style.background = "rgb(241, 205, 160)"
-}else{
-    if(hour >= 12 && hour < 18){
-        resu.innerText = 'Good evening'
-        document.body.style.background = "rgb(255, 127, 113)"
+function tabuada(){
+    var num = document.getElementById('txtn')
+    let tab = document.getElementById('seltab')
+    if(num.value.length == 0){
+        alert('Por favor Digite um numero')
     }else{
-        resu.innerText = 'Good Night'
-        document.body.style.background = "gray"
+        var n = Number(num.value)
+        let c = 1
+        tab.innerHTML = ""
+        while(c <= 10){
+            let item = document.createElement('option')
+            item.text = `${n} X ${c} = ${n*c}`
+            item.value = `tab${c}`
+            tab.appendChild(item)
+            c++
+        } 
     }
 }
